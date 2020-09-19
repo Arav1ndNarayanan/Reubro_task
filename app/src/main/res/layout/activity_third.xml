@@ -6,4 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".ThirdActivity">
 
+
+    <Button
+        android:id="@+id/bAlert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="241dp"
+        android:text="ALERT DIALOG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dPickerButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="setDate"
+        android:text="DATE PICKER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dPickerView" />
+
+    <Button
+        android:id="@+id/progressDialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="PROGRESS DIALOG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dPickerButton" />
+
+    <TextView
+        android:id="@+id/dPickerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Date"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bAlert" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
